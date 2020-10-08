@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".menus.ActivityAbout">
+    <include
+        android:id="@+id/actionbar"
+        layout="@layout/appbar"></include>
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="314dp"
+        android:layout_height="87dp"
+        android:layout_below="@id/actionbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="45dp"
+        android:text="creado por Jhon Edison pinedo en Android Studio 4.0.1 ,
+Build #AI-193.6911.18.40.6626763, built on June 24, 2020
+Runtime version: 1.8.0_242-release-1644-b01 amd64
+VM: OpenJDK 64-Bit Server VM by JetBrains s.r.o
+Windows 10 10.0
+">
+
+    </TextView>
+</LinearLayout>

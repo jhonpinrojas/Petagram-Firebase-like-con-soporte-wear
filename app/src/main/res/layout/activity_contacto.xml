@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".menus.ActivityContacto">
+<include
+    android:id="@+id/actionbar"
+    layout="@layout/appbar">
+</include>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="contactos"
+        android:layout_gravity="center"
+        android:textSize="25dp"
+        android:textStyle="bold">
+
+    </TextView>
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textonombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"/>
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textocorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/correo"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp">
+    </com.google.android.material.textfield.TextInputEditText>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textodescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textocorreo"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:hint="@string/Descripcion" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textodescripcion"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:text="Enviar Comentario" />
+
+</LinearLayout>
